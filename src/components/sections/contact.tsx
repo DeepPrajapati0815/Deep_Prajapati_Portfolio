@@ -65,18 +65,32 @@ export function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      toast({
+        title: "Configuration Error",
+        description: "Email service is not configured. Please add EmailJS env variables.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     // Send email via EmailJS
     try {
       await emailjs.send(
-        "service_1pqc44e",        // replace with your EmailJS service ID
-        "template_ctgu9wj",       // replace with your EmailJS template ID
+        serviceId,
+        templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'PpGGNlxktddY6N_wA',         // replace with your EmailJS public key
+        publicKey,
       );
 
       toast({
