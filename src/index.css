@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Light Theme Portfolio Design System */
+
+@layer base {
+  :root {
+    /* Light Theme - Primary palette */
+    --background: 0 0% 100%;               /* Pure White */
+    --background-secondary: 0 0% 98%;      /* Soft Neutral White */
+    --background-card: 0 0% 97%;           /* Light Grey Card */
+    --foreground: 220 15% 15%;             /* Dark Charcoal */
+    --foreground-muted: 220 10% 45%;       /* Medium Grey Text */
+
+    /* Electric blue accent */
+    --electric-blue: 217 90% 50%;          /* Modern Corporate Blue */
+    --electric-blue-light: 217 90% 60%;
+    --electric-blue-dark: 217 90% 40%;
+    --electric-blue-glow: 217 90% 55%;
+
+    /* Teal secondary accent */
+    --teal: 180 72% 40%;
+    --teal-light: 180 72% 50%;
+    --teal-dark: 180 72% 32%;
+
+    /* Orange highlight (subtle, elegant) */
+    --orange: 28 90% 55%;
+    --orange-light: 28 90% 65%;
+    --orange-dark: 28 90% 45%;
+
+    /* Semantic tokens */
+    --primary: 217 90% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 217 90% 60%;
+
+    --secondary: 0 0% 94%;
+    --secondary-foreground: 220 15% 15%;
+
+    --accent: 180 72% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 15% 15%;
+    --card-border: 0 0% 90%;
+
+    --muted: 0 0% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 96%;
+    --ring: 217 90% 50%;
+
+    --destructive: 0 80% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Gradients - simplified for light mode */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--teal)));
+    --gradient-hero: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+    --gradient-card: linear-gradient(145deg, #ffffff 0%, #f3f3f3 100%);
+    --gradient-text: linear-gradient(135deg, hsl(var(--electric-blue)), hsl(var(--teal)));
+
+    /* Shadows and glows for light UI */
+    --shadow-glow: 0 0 35px hsl(var(--electric-blue-glow) / 0.25);
+    --shadow-card: 0 4px 16px rgba(0,0,0,0.06);
+    --shadow-button: 0 4px 12px hsl(var(--primary) / 0.25);
+
+    /* Smooth animations */
+    --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.2s ease-out;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Text gradients */
+  .text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glow effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-border {
+    position: relative;
+  }
+
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
+
+  /* Subtle background dots (professional toned-down) */
+  .bg-dots {
+    background-image: radial-gradient(circle, hsl(var(--electric-blue) / 0.08) 1px, transparent 1px);
+    background-size: 30px 30px;
+    animation: float 22s ease-in-out infinite;
+  }
+
+  /* Hover animations */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Code styling */
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Skill progress indicators */
+  .skill-bar {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .skill-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: inherit;
+    transition: width 1s ease-out;
+  }
+}
+
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slideInLeft {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  .animate-slideInRight {
+    animation: slideInRight 0.6s ease-out;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
