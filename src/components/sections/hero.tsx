@@ -39,7 +39,7 @@ export function HeroSection() {
                 Software Engineer – Backend
               </h2>
               <p className="text-lg text-foreground-muted max-w-xl leading-relaxed">
-                Highly motivated Software Engineer with 3+ years of experience in architecting and shipping scalable backend solutions. Expert in Node.js and scalable systems, with a proven track record of owning engineering standards to support high-growth environments. Passionate about delegating technical ownership and leading teams to meet aggressive product roadmaps for 10x scalability.
+                Highly motivated Software Engineer with around 4 years of experience in architecting and shipping scalable backend solutions. Expert in Node.js and scalable systems, with a proven track record of owning engineering standards to support high-growth environments. Passionate about delegating technical ownership and leading teams to meet aggressive product roadmaps for 10x scalability.
               </p>
             </div>
 
@@ -164,7 +164,7 @@ export function HeroSection() {
               </div>
 
               <div className="absolute -bottom-4 -left-4 bg-card border border-card-border px-4 py-2 rounded-xl">
-                <p className="text-sm font-medium">3+ Years Experience</p>
+                <p className="text-sm font-medium">~4 Years Experience</p>
                 <p className="text-xs text-foreground-muted">
                   Backend & scalable Systems
                 </p>

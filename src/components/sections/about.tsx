@@ -46,7 +46,7 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Software Engineer (Backend) with 3+ years building scalable systems and leading technical delivery
+            Software Engineer (Backend) with around 4 years building scalable systems and leading technical delivery
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-foreground">My Journey</h3>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                I'm a Software Engineer with over 3 years of experience architecting and 
+                I'm a Software Engineer with around 4 years of experience architecting and 
                 shipping scalable backend solutions. I specialize in Node.js and scalable 
                 systems, with a proven track record of owning engineering standards to support 
                 high-growth environments.

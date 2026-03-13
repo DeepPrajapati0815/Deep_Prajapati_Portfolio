@@ -7,7 +7,8 @@ import {
   Network, 
   Cloud, 
   Code,
-  Layers
+  Layers,
+  Sparkles
 } from "lucide-react";
 
 const skillCategories = [
@@ -86,6 +87,19 @@ const skillCategories = [
       { name: "Testing & Documentation", level: 80 },
       { name: "Code Quality & Best Practices", level: 88 },
     ]
+  },
+  {
+    title: "AI & Coding Assistants",
+    icon: Sparkles,
+    color: "accent",
+    skills: [
+      { name: "Cursor", level: 90 },
+      { name: "Windsurf", level: 85 },
+      { name: "Antigravity", level: 82 },
+      { name: "Claude (Anthropic)", level: 90 },
+      { name: "ChatGPT / OpenAI", level: 88 },
+      { name: "GitHub Copilot", level: 85 },
+    ]
   }
 ];
 
@@ -163,7 +177,10 @@ export function SkillsSection() {
               "Technical Ownership & Dev Lead",
               "Sprint Planning & Product Roadmap",
               "High-Throughput API Design",
-              "Security & Role-Based Authorization"
+              "Security & Role-Based Authorization",
+              "Cursor & AI-Assisted Development",
+              "Claude, ChatGPT & LLM Tools",
+              "Windsurf, Antigravity, Copilot"
             ].map((competency, index) => (
               <Badge 
                 key={index}
