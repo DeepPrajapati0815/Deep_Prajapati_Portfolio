@@ -7,7 +7,7 @@ const workExperience = [
     company: "OpenXcell Technologies",
     period: "January 2025 – Present",
     type: "Backend & Architecture",
-    description: "Architecting modular backend systems for Security Management, owning end-to-end design of high-throughput patrol tracking and guard allocation engines. Shipping real-time dashboard APIs using Node.js and Socket.IO for 10x scalability. Leading integration of complex eCommerce shipping workflows including automated courier allocation and fulfillment pipelines. Delegating sprint priorities and managing client communication to align with aggressive product roadmap timelines.",
+    description: "I design and build the backend for a security management product—things like patrol tracking and guard allocation. We use Node.js and Socket.IO for real-time dashboards. I also work on eCommerce shipping: courier allocation, fulfillment pipelines, and making sure clients get what they need on time. I run sprints and talk to stakeholders so we ship without surprises.",
     icon: Briefcase,
   },
   {
@@ -15,7 +15,7 @@ const workExperience = [
     company: "Fancall Pvt Ltd",
     period: "February 2024 – January 2025",
     type: "Backend & Team Lead",
-    description: "Led cross-functional team in architecting creator-fan communication modules. Owned root-cause analysis and bug resolution—reducing call drop rates by 50% and improving system responsiveness by 40%. Implemented repository pattern refactoring for 60% improvement in database query performance. Architected Brand Module for real-time earnings calculation and campaign management interface.",
+    description: "Backend for a platform where creators and fans do video calls. I led the team that fixed a lot of call drops—we got drop rate down by 50% and made the system feel much snappier. I refactored our data layer (repository pattern) and that alone made our DB queries about 60% faster. Also built the Brand Module so brands could run campaigns and see earnings in real time.",
     icon: Briefcase,
   },
   {
@@ -23,15 +23,15 @@ const workExperience = [
     company: "PagetX Technologies LLP",
     period: "July 2023 – February 2024",
     type: "Real-time Systems",
-    description: "Architected low-latency voice, video, and text communication systems using Node.js and Socket.IO. Shipped live radio streaming architecture with complex third-party API integration and stream orchestration. Led security hardening with role-based authorization protocols.",
+    description: "Voice, video, and text chat—all in Node.js and Socket.IO. I worked on keeping latency low and the streams stable. We also had live radio; I integrated third-party APIs and made the streaming pipeline reliable. I added role-based access so only the right people could do certain actions.",
     icon: Briefcase,
   },
   {
     title: "Software Engineer",
     company: "Luncet Innovation Pvt Ltd",
     period: "June 2022 – June 2023",
-    type: "Backend & Blockchain",
-    description: "Architected decentralized NFT marketplace components using blockchain smart contracts for secure, high-concurrency transactions. Shipped custom checkout extensions and optimized conversion rate workflows through iterative backend enhancements.",
+    type: "Backend",
+    description: "Backend for a product that used blockchain and smart contracts. I built the APIs that talked to the chain and made sure we could handle a lot of concurrent requests. Also did checkout and conversion flow improvements on the backend.",
     icon: Briefcase,
   },
 ];
@@ -46,7 +46,7 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Software Engineer (Backend) with around 4 years building scalable systems and leading technical delivery
+            Backend engineer, ~4 years in. I build systems that stay up when it matters.
           </p>
         </div>
 
@@ -56,16 +56,10 @@ export function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-foreground">My Journey</h3>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                I'm a Software Engineer with around 4 years of experience architecting and 
-                shipping scalable backend solutions. I specialize in Node.js and scalable 
-                systems, with a proven track record of owning engineering standards to support 
-                high-growth environments.
+                I've been writing backend code for about 4 years, mostly in Node.js. Started at a smaller product company, then moved to places where the systems had to scale—real-time calling, live dashboards, shipping and fulfillment logic. I care about clean design and making sure the database and APIs don't become the bottleneck.
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                I'm passionate about delegating technical ownership and leading teams to meet 
-                aggressive product roadmaps for 10x scalability. My work spans real-time systems, 
-                security management, eCommerce fulfillment, and creator-fan platforms—backed by 
-                strong database optimization and cloud infrastructure.
+                These days I do a mix of hands-on coding and helping decide what we build next. I've worked on security management backends, eCommerce workflows, and creator–fan platforms. When something breaks in prod, I'm usually the one digging in and fixing it.
               </p>
             </div>
 
@@ -100,10 +94,10 @@ export function AboutSection() {
             {/* Core Values */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { label: "Continuous Learning", value: "Always Improving" },
-                { label: "Knowledge Sharing", value: "Community First" },
-                { label: "Code Quality", value: "Best Practices" },
-                { label: "Problem Solving", value: "Analytical Thinking" },
+                { label: "Learning", value: "I keep up with new tools" },
+                { label: "Sharing", value: "I explain things clearly" },
+                { label: "Code", value: "Readable and maintainable" },
+                { label: "Debugging", value: "I find the root cause" },
               ].map((item, index) => (
                 <Card key={index} className="p-4 text-center bg-card border-card-border hover-lift">
                   <p className="text-sm text-foreground-muted">{item.label}</p>

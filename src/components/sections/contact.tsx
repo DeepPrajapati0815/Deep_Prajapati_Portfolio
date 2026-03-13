@@ -94,8 +94,8 @@ export function ContactSection() {
       );
 
       toast({
-        title: "Message Sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "Got it",
+        description: "I'll get back to you soon.",
       });
 
       setFormData({ name: "", email: "", subject: "", message: "" });
@@ -120,7 +120,7 @@ export function ContactSection() {
             Let's Connect
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Ready to discuss your next project or just want to say hello? I'd love to hear from you.
+            Have a project or just want to say hi? Drop a message.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export function ContactSection() {
                   Send a Message
                 </h3>
                 <p className="text-foreground-muted">
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  I usually reply within a day.
                 </p>
               </div>
 
@@ -198,7 +198,7 @@ export function ContactSection() {
                     required
                     rows={6}
                     className="bg-background border-card-border focus:border-primary resize-none"
-                    placeholder="Tell me about your project or say hello..."
+                    placeholder="What's on your mind?"
                   />
                 </div>
 
@@ -227,7 +227,7 @@ export function ContactSection() {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-foreground flex items-center gap-2">
                 <MapPin className="h-6 w-6 text-primary" />
-                Get in Touch
+                Reach me
               </h3>
               
               <div className="space-y-4">
@@ -257,7 +257,7 @@ export function ContactSection() {
             {/* Quick Actions */}
             <Card className="p-6 bg-gradient-card border-card-border">
               <div className="space-y-4">
-                <h4 className="text-xl font-bold text-foreground">Quick Actions</h4>
+                <h4 className="text-xl font-bold text-foreground">Or just</h4>
                 
                 <div className="space-y-3">
                   <Button
@@ -294,16 +294,16 @@ export function ContactSection() {
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                     onClick={() =>
                       window.location.href =
-                        "mailto:deepprajapati0815@gmail.com?subject=Portfolio Inquiry - Request to Schedule a Call&body=Hello Deep,%0D%0A%0D%0AI visited your portfolio website and would like to schedule a call with you.%0D%0A%0D%0APlease find my details below:%0D%0A- Name: [Your Name]%0D%0A- Company/Organization: [Your Company]%0D%0A- Preferred Date/Time: [Your Availability]%0D%0A- Purpose of Call: [Brief about the discussion]%0D%0A%0D%0ALooking forward to your confirmation.%0D%0A%0D%0ABest Regards,%0D%0A[Your Name]"
+                        "mailto:deepprajapati0815@gmail.com?subject=Let's talk&body=Hi Deep,%0D%0A%0D%0AI saw your portfolio and wanted to reach out.%0D%0A%0D%0AName: [Your name]%0D%0AWhen I'm free: [Your availability]%0D%0AWhat I have in mind: [Brief note]%0D%0A%0D%0AThanks"
                     }
                   >
-                    Schedule a Call
+                    Email to schedule a call
                   </Button>
                 </div>
 
                 <div className="pt-4 border-t border-card-border">
                   <p className="text-sm text-foreground-muted text-center">
-                    Usually responds within 24 hours
+                    I usually reply within a day
                   </p>
                 </div>
               </div>

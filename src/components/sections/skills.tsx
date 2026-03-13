@@ -129,7 +129,7 @@ export function SkillsSection() {
             Skills & Expertise
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Backend technologies, scalable systems, and leadership experience I use to ship scalable solutions
+            Tech and practices I use day to day
           </p>
         </div>
 
@@ -165,21 +165,21 @@ export function SkillsSection() {
 
         {/* Skill Highlights */}
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-foreground mb-8">Core Competencies</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8">What I work with</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Backend Architecture & Design",
-              "Node.js & NestJS",
+              "Backend design",
+              "Node.js · NestJS",
               "PostgreSQL, MySQL, MongoDB, Redis",
-              "Real-time Systems (Socket.IO)",
+              "Real-time (Socket.IO)",
               "AWS, Docker, Kubernetes",
-              "RabbitMQ & Event-Driven Systems",
-              "Technical Ownership & Dev Lead",
-              "Sprint Planning & Product Roadmap",
-              "High-Throughput API Design",
-              "Security & Role-Based Authorization",
-              "Cursor & AI-Assisted Development",
-              "Claude, ChatGPT & LLM Tools",
+              "RabbitMQ, event-driven",
+              "Owning features end-to-end",
+              "Sprints and roadmap",
+              "APIs under load",
+              "Auth and roles",
+              "Cursor, AI-assisted dev",
+              "Claude, ChatGPT",
               "Windsurf, Antigravity, Copilot"
             ].map((competency, index) => (
               <Badge 

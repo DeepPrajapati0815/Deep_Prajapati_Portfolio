@@ -14,61 +14,59 @@ import {
 const services = [
   {
     icon: ShieldCheck,
-    title: "Scalable Backend Systems",
-    description: "Design and develop secure, high-performance backends using Node.js, Express, and modern frameworks. Optimized for high traffic and real-time use cases.",
+    title: "Backend systems that scale",
+    description: "I build APIs and services in Node.js (Express, NestJS) that can handle real traffic. Message queues, caching, and clean structure so you can grow without rewriting everything.",
     features: [
-      "High-concurrency API Development",
-      "Event-driven Architecture (Redis, RabbitMQ)",
-      "Load Balancing & Horizontal Scaling",
-      "Performance Monitoring & Optimization"
+      "APIs that stay fast under load",
+      "Redis, RabbitMQ when you need async or queues",
+      "Sensible scaling and load handling",
+      "Monitoring so you know when something breaks"
     ],
     color: "blue"
   },
   {
     icon: Layout,
-    title: "Full Stack Web Applications",
-    description: "End-to-end development of responsive and interactive web applications using React.js, Redux, and modern UI libraries combined with scalable backend APIs.",
+    title: "Full-stack web apps",
+    description: "Backend plus a React front end when you need it. I focus on the API and data side; the UI is built to work with it and stay responsive.",
     features: [
-      "Responsive UI/UX with React & Tailwind",
-      "State Management with Redux Toolkit",
-      "Secure Authentication & Authorization",
-      "Integration with Scalable APIs"
+      "React, Tailwind, modern UI patterns",
+      "State and auth done right",
+      "APIs that your front end can rely on"
     ],
     color: "green"
   },
   {
     icon: Zap,
-    title: "Real-time Applications",
-    description: "Build real-time, interactive platforms such as chat apps, multiplayer games, live dashboards, and collaborative tools powered by WebSockets.",
+    title: "Real-time features",
+    description: "Chat, live updates, dashboards, or anything that needs instant data. I use WebSockets and Socket.IO so the server and client stay in sync.",
     features: [
-      "Real-time Messaging & Notifications",
-      "Live Dashboards & Analytics",
-      "Multiplayer Game Backends",
-      "Collaboration Tools with Socket.IO"
+      "Live messaging and notifications",
+      "Dashboards that update without refresh",
+      "Socket.IO and WebSockets wired correctly"
     ],
     color: "orange"
   },
   {
     icon: Database,
-    title: "Database Design & Optimization",
-    description: "Efficient database solutions ensuring fast query performance, proper schema design, and scalable data handling across SQL and NoSQL databases.",
+    title: "Databases that don't slow you down",
+    description: "Schema design, indexing, and when to use SQL vs NoSQL. I've tuned PostgreSQL and MongoDB in production and fixed slow queries more times than I can count.",
     features: [
-      "Schema Design (PostgreSQL, MySQL, MongoDB)",
-      "Query Optimization & Indexing",
-      "Caching with Redis",
-      "Data Migration & Backup Solutions"
+      "PostgreSQL, MySQL, MongoDB",
+      "Indexes and queries that make sense",
+      "Redis for caching where it helps",
+      "Migrations and backups you can trust"
     ],
     color: "teal"
   },
   {
     icon: Cloud,
-    title: "Cloud & DevOps Solutions",
-    description: "Deployment and automation of scalable infrastructure with AWS, Docker, CI/CD pipelines, and modern monitoring tools for seamless delivery and observability.",
+    title: "Deploy and run it",
+    description: "AWS, Docker, and CI/CD so your app gets to production and stays there. I set up the pipeline and the basics so you can focus on building.",
     features: [
-      "AWS Infrastructure Setup & Scaling",
-      "Docker & Container Orchestration",
-      "CI/CD Pipeline Automation",
-      "Monitoring & Observability with Grafana & Prometheus"
+      "AWS: EC2, RDS, S3, load balancers",
+      "Docker and containers",
+      "CI/CD so deploys are one click",
+      "Grafana/Prometheus when you want visibility"
     ],
     color: "purple"
   }
@@ -91,7 +89,7 @@ export function ServicesSection() {
             Services
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Backend development, real-time systems, and scalable architecture services
+            What I can help you build
           </p>
         </div>
 
@@ -146,11 +144,10 @@ export function ServicesSection() {
           <Card className="p-8 bg-gradient-card border-card-border inline-block">
             <div className="max-w-2xl mx-auto space-y-4">
               <h3 className="text-2xl font-bold text-foreground">
-                Ready to Build Something Amazing?
+                Have a project in mind?
               </h3>
               <p className="text-foreground-muted">
-                Let's discuss your project requirements and create a scalable solution 
-                that grows with your business.
+                Tell me what you're building and we can figure out if I'm a good fit.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button
@@ -166,10 +163,10 @@ export function ServicesSection() {
                   className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   onClick={() =>
                     window.location.href =
-                      "mailto:deepprajapati0815@gmail.com?subject=Portfolio Inquiry - Request to Schedule a Call&body=Hello Deep,%0D%0A%0D%0AI visited your portfolio website and would like to schedule a call with you.%0D%0A%0D%0APlease find my details below:%0D%0A- Name: [Your Name]%0D%0A- Company/Organization: [Your Company]%0D%0A- Preferred Date/Time: [Your Availability]%0D%0A- Purpose of Call: [Brief about the discussion]%0D%0A%0D%0ALooking forward to your confirmation.%0D%0A%0D%0ABest Regards,%0D%0A[Your Name]"
+                      "mailto:deepprajapati0815@gmail.com?subject=Project discussion&body=Hi Deep,%0D%0A%0D%0AI saw your portfolio. Would like to chat about a project.%0D%0A%0D%0AName: [Your name]%0D%0AAvailability: [When you're free]%0D%0AQuick summary: [What you need]%0D%0A%0D%0AThanks"
                   }
                 >
-                  Schedule a Call
+                  Email to schedule a call
                 </Button>
 
               </div>

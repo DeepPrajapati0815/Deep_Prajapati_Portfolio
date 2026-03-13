@@ -39,7 +39,7 @@ export function HeroSection() {
                 Software Engineer – Backend
               </h2>
               <p className="text-lg text-foreground-muted max-w-xl leading-relaxed">
-                Highly motivated Software Engineer with around 4 years of experience in architecting and shipping scalable backend solutions. Expert in Node.js and scalable systems, with a proven track record of owning engineering standards to support high-growth environments. Passionate about delegating technical ownership and leading teams to meet aggressive product roadmaps for 10x scalability.
+                I build backends in Node.js and have been doing it for about 4 years. Most of my work is in real-time systems, APIs that can handle load, and making sure things don't break when traffic grows. I like owning the full picture—from design to deployment—and working with teams that ship on time.
               </p>
             </div>
 
@@ -131,7 +131,7 @@ export function HeroSection() {
                 <div className="relative overflow-hidden rounded-xl bg-card">
                   <img
                     src={jayProfile}
-                    alt="Jay Panchal - Backend Software Engineer"
+                    alt="Deep Prajapati"
                     className="w-full h-auto object-cover"
                   />
 
@@ -166,7 +166,7 @@ export function HeroSection() {
               <div className="absolute -bottom-4 -left-4 bg-card border border-card-border px-4 py-2 rounded-xl">
                 <p className="text-sm font-medium">~4 Years Experience</p>
                 <p className="text-xs text-foreground-muted">
-                  Backend & scalable Systems
+                  Backend · Node.js · APIs
                 </p>
               </div>
             </div>

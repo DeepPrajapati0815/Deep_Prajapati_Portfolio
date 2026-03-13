@@ -14,14 +14,14 @@ const projects = [
   {
     title: "Security Management System",
     description:
-      "Modular backend for security management at OpenXcell—high-throughput patrol tracking and guard allocation engines. Real-time dashboard APIs with Node.js and Socket.IO, built for 10x scalability and live activity monitoring.",
+      "Backend for a security product at OpenXcell. Patrol tracking, guard allocation, and a real-time dashboard so ops can see what's happening live. Node.js and Socket.IO. I own the design and the code; we've scaled it as the product grew.",
     image: "",
     technologies: ["Node.js", "Socket.IO", "PostgreSQL", "Redis", "AWS"],
     features: [
-      "Patrol tracking & guard allocation engines",
-      "Real-time dashboard APIs",
-      "10x scalability for live monitoring",
-      "End-to-end backend ownership",
+      "Patrol and guard allocation logic",
+      "Live dashboard APIs",
+      "Built to scale with traffic",
+      "I own the backend end-to-end",
     ],
     type: "Backend / Real-time",
     status: "Live",
@@ -34,14 +34,14 @@ const projects = [
   {
     title: "eCommerce Shipping & Fulfillment",
     description:
-      "Complex eCommerce shipping workflows with automated courier allocation and logic-heavy fulfillment pipelines. Integrated with Security Management backend for enterprise clients.",
+      "Shipping and fulfillment backend: which courier gets which order, pipeline logic, and making sure enterprise clients' workflows don't break. Integrated with the security product. Lots of rules and edge cases; I made it maintainable.",
     image: "",
     technologies: ["Node.js", "PostgreSQL", "Redis", "RabbitMQ", "AWS"],
     features: [
-      "Automated courier allocation",
-      "Fulfillment pipeline orchestration",
-      "High-throughput order processing",
-      "Sprint & client delivery alignment",
+      "Auto courier allocation",
+      "Fulfillment pipeline",
+      "Handles high order volume",
+      "Aligned with client timelines",
     ],
     type: "Backend / Enterprise",
     status: "Live",
@@ -54,14 +54,14 @@ const projects = [
   {
     title: "Fancall – Creator–Fan Platform",
     description:
-      "Creator-fan communication platform. Led backend architecture; reduced call drop rates by 50% and improved system responsiveness by 40%. Repository pattern refactoring achieved 60% faster database query performance. Architected Brand Module for real-time earnings and campaign management.",
+      "Backend for a platform where creators and fans do video calls. I led the backend; we cut call drops by 50% and made the system much more responsive. Refactored the data layer and got ~60% faster DB queries. Built the Brand Module so brands could run campaigns and see earnings in real time.",
     image: "",
     technologies: ["Node.js", "Socket.IO", "PostgreSQL", "Redis", "RabbitMQ", "AWS"],
     features: [
-      "Real-time voice & video communication",
-      "Brand Module & campaign management",
-      "50% call drop reduction, 40% responsiveness gain",
-      "60% DB performance improvement",
+      "Real-time voice and video",
+      "Brand campaigns and earnings",
+      "50% fewer call drops, 40% better responsiveness",
+      "60% faster queries after refactor",
     ],
     type: "Real-time App",
     status: "Live",
@@ -73,14 +73,14 @@ const projects = [
   {
     title: "Real-Time Voice, Video & Radio (PagetX)",
     description:
-      "Low-latency voice, video, and text communication systems with Node.js and Socket.IO. Live radio streaming architecture with complex third-party API integration and stream orchestration. Role-based authorization and security hardening.",
+      "Voice, video, and text chat in Node.js and Socket.IO. We also had live radio—I hooked up third-party APIs and built the streaming pipeline. Added role-based access so only the right people could do sensitive actions.",
     image: "",
     technologies: ["Node.js", "Socket.IO", "Redis", "WebSockets"],
     features: [
-      "Voice, video & text communication",
-      "Live radio streaming architecture",
-      "Third-party API & stream orchestration",
-      "Role-based authorization",
+      "Voice, video, text",
+      "Live radio streaming",
+      "Third-party API integration",
+      "Role-based access control",
     ],
     type: "Real-time App",
     status: "Completed",
@@ -102,7 +102,7 @@ export function PortfolioSection() {
             Portfolio
           </h2>
           <p className="text-foreground-muted max-w-xl mx-auto">
-            Backend and real-time systems I've architected and shipped
+            Stuff I've built and shipped
           </p>
         </div>
 
@@ -198,7 +198,7 @@ export function PortfolioSection() {
         <div className="mt-12 text-center">
           <Card className="p-6 sm:p-8 max-w-xl mx-auto inline-block">
             <p className="text-foreground-muted mb-4">
-              More projects and open-source on GitHub
+              Rest of my work is on GitHub—repos and side projects.
             </p>
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <a
