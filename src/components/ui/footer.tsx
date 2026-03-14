@@ -20,7 +20,7 @@ export function Footer() {
               Deep Prajapati
             </button>
             <p className="text-foreground-muted">
-              Backend engineer. Node.js, APIs, and systems that scale.
+              Software Engineer. Node.js, React, APIs, and systems that scale.
             </p>
           </div>
 

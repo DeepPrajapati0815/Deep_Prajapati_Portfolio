@@ -3,104 +3,77 @@ import { Badge } from "@/components/ui/badge";
 import { 
   Server, 
   Database, 
-  Zap, 
-  Network, 
   Cloud, 
   Code,
-  Layers,
   Sparkles
 } from "lucide-react";
 
 const skillCategories = [
   {
-    title: "Backend & Architecture",
+    title: "Backend",
     icon: Server,
     color: "primary",
     skills: [
       { name: "Node.js", level: 95 },
       { name: "NestJS", level: 90 },
       { name: "Express.js", level: 90 },
-      { name: "Architecture Design", level: 88 },
+      { name: "Socket.IO", level: 90 },
+      { name: "RabbitMQ", level: 85 },
+      { name: "Kafka", level: 80 },
+      { name: "REST APIs & Swagger", level: 92 },
     ]
   },
   {
-    title: "Databases & Scaling",
-    icon: Database,
+    title: "Frontend",
+    icon: Code,
     color: "accent",
+    skills: [
+      { name: "React.js", level: 90 },
+      { name: "HTML5, CSS3, Tailwind", level: 88 },
+      { name: "MUI", level: 85 },
+      { name: "Redux & State Management", level: 85 },
+      { name: "UI Library", level: 85 },
+    ]
+  },
+  {
+    title: "Databases",
+    icon: Database,
+    color: "orange",
     skills: [
       { name: "PostgreSQL", level: 90 },
       { name: "MySQL", level: 85 },
-      { name: "MongoDB", level: 80 },
+      { name: "MongoDB", level: 85 },
       { name: "Redis", level: 85 },
-      { name: "RabbitMQ", level: 80 },
-      { name: "Sequelize & Prisma", level: 85 },
+      { name: "Sequelize (ORM)", level: 85 },
+      { name: "Knex.js (ORM)", level: 82 },
+      { name: "Mongoose (ODM)", level: 85 },
     ]
   },
   {
-    title: "Real-Time & Communication",
-    icon: Zap,
-    color: "orange",
-    skills: [
-      { name: "Socket.IO", level: 90 },
-      { name: "WebSockets", level: 88 },
-      { name: "Real-time APIs", level: 90 },
-    ]
-  },
-  {
-    title: "DevOps & Cloud",
+    title: "Cloud & DevOps",
     icon: Cloud,
     color: "primary",
     skills: [
-      { name: "AWS", level: 80 },
+      { name: "AWS (EC2, Lambda, S3, SES, SNS, SQS)", level: 85 },
       { name: "Docker", level: 85 },
       { name: "Kubernetes", level: 75 },
-      { name: "Git / GitHub", level: 95 },
+      { name: "Git & CI/CD", level: 92 },
     ]
   },
   {
-    title: "System Design & Performance",
-    icon: Layers,
-    color: "accent",
-    skills: [
-      { name: "Scalability & High-Throughput Design", level: 88 },
-      { name: "Database Optimization", level: 90 },
-      { name: "API Design & Versioning", level: 92 },
-      { name: "Secure Architecture", level: 85 },
-    ]
-  },
-  {
-    title: "Leadership & Strategy",
-    icon: Network,
-    color: "teal",
-    skills: [
-      { name: "Dev Lead & Technical Ownership", level: 85 },
-      { name: "Sprint Planning", level: 88 },
-      { name: "Product Roadmap Management", level: 82 },
-    ]
-  },
-  {
-    title: "Development Tools",
-    icon: Code,
-    color: "teal",
-    skills: [
-      { name: "REST API Design", level: 95 },
-      { name: "Testing & Documentation", level: 80 },
-      { name: "Code Quality & Best Practices", level: 88 },
-    ]
-  },
-  {
-    title: "AI & Coding Assistants",
+    title: "AI & Tools",
     icon: Sparkles,
     color: "accent",
     skills: [
       { name: "Cursor", level: 90 },
       { name: "Windsurf", level: 85 },
-      { name: "Antigravity", level: 82 },
-      { name: "Claude (Anthropic)", level: 90 },
-      { name: "ChatGPT / OpenAI", level: 88 },
+      { name: "ChatGPT", level: 88 },
+      { name: "Claude", level: 90 },
       { name: "GitHub Copilot", level: 85 },
+      { name: "Prompt Engineering", level: 85 },
+      { name: "VS Code, Postman", level: 95 },
     ]
-  }
+  },
 ];
 
 
@@ -168,19 +141,16 @@ export function SkillsSection() {
           <h3 className="text-2xl font-bold text-foreground mb-8">What I work with</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Backend design",
-              "Node.js · NestJS",
+              "Node.js · NestJS · Express.js",
+              "React.js · Tailwind · MUI · Redux",
               "PostgreSQL, MySQL, MongoDB, Redis",
-              "Real-time (Socket.IO)",
-              "AWS, Docker, Kubernetes",
-              "RabbitMQ, event-driven",
-              "Owning features end-to-end",
-              "Sprints and roadmap",
-              "APIs under load",
-              "Auth and roles",
-              "Cursor, AI-assisted dev",
-              "Claude, ChatGPT",
-              "Windsurf, Antigravity, Copilot"
+              "Socket.IO · RabbitMQ · Kafka",
+              "AWS (EC2, Lambda, S3, SES, SNS, SQS)",
+              "Docker · Kubernetes · CI/CD",
+              "Sequelize · Knex · Mongoose",
+              "REST APIs · Swagger",
+              "Cursor · ChatGPT · Claude · Copilot",
+              "Prompt Engineering"
             ].map((competency, index) => (
               <Badge 
                 key={index}

@@ -36,10 +36,10 @@ export function HeroSection() {
                 <span className="text-gradient">Deep Prajapati</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-medium text-foreground-muted">
-                Software Engineer – Backend
+                Software Engineer
               </h2>
               <p className="text-lg text-foreground-muted max-w-xl leading-relaxed">
-                I build backends in Node.js and have been doing it for about 4 years. Most of my work is in real-time systems, APIs that can handle load, and making sure things don't break when traffic grows. I like owning the full picture—from design to deployment—and working with teams that ship on time.
+                Software Engineer with 3.8 years of experience shipping production systems across social platforms, ecommerce, security, events, and custom software. Scaled infrastructure to 1 lakh+ users, cut call failures by 50%, and improved DB performance by 75%. I own products end-to-end—architecture, APIs, and delivery.
               </p>
             </div>
 
@@ -48,10 +48,10 @@ export function HeroSection() {
               {[
                 "Node.js",
                 "NestJS",
+                "React.js",
                 "PostgreSQL",
                 "AWS",
-                "Redis",
-                "RabbitMQ",
+                "Socket.IO",
               ].map((skill) => (
                 <span
                   key={skill}
@@ -164,9 +164,9 @@ export function HeroSection() {
               </div>
 
               <div className="absolute -bottom-4 -left-4 bg-card border border-card-border px-4 py-2 rounded-xl">
-                <p className="text-sm font-medium">~4 Years Experience</p>
+                <p className="text-sm font-medium">~3.8 Years Experience</p>
                 <p className="text-xs text-foreground-muted">
-                  Backend · Node.js · APIs
+                  Full-stack · Node.js · APIs
                 </p>
               </div>
             </div>

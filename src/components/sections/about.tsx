@@ -3,35 +3,35 @@ import { Calendar, MapPin, GraduationCap, Briefcase } from "lucide-react";
 
 const workExperience = [
   {
-    title: "Software Engineer – Backend",
-    company: "OpenXcell Technologies",
+    title: "Software Engineer",
+    company: "Openxcell Technolabs Pvt Ltd",
     period: "January 2025 – Present",
-    type: "Backend & Architecture",
-    description: "I design and build the backend for a security management product—things like patrol tracking and guard allocation. We use Node.js and Socket.IO for real-time dashboards. I also work on eCommerce shipping: courier allocation, fulfillment pipelines, and making sure clients get what they need on time. I run sprints and talk to stakeholders so we ship without surprises.",
+    type: "Full-stack & Real-time",
+    description: "Built Livesecure security guard management system with patrol tracking, guard allocation, schedule management, and real-time analytics using Socket.IO. Built Pepli, a unified social media platform with feeds, messaging, media uploads, and professional networking. Built MMTA, an event & conference management system with session scheduling, attendee registration, speaker management, and notifications.",
     icon: Briefcase,
   },
   {
-    title: "Software Engineer",
+    title: "Sr. Software Engineer",
     company: "Fancall Pvt Ltd",
     period: "February 2024 – January 2025",
-    type: "Backend & Team Lead",
-    description: "Backend for a platform where creators and fans do video calls. I led the team that fixed a lot of call drops—we got drop rate down by 50% and made the system feel much snappier. I refactored our data layer (repository pattern) and that alone made our DB queries about 60% faster. Also built the Brand Module so brands could run campaigns and see earnings in real time.",
+    type: "Backend & Scale",
+    description: "Built Fancall creator–fan communication platform scaled to 100,000+ users with real-time video, audio, and chat; brand–creator collaboration module; campaign management; views/clicks analytics; and creator earning engine. Resolved systematic call drops by 50% and improved system responsiveness. Refactored data layer with repository pattern, achieving 75% improvement in DB query performance under peak load.",
     icon: Briefcase,
   },
   {
     title: "Software Engineer",
-    company: "PagetX Technologies LLP",
+    company: "Pragetx Technologies LLP",
     period: "July 2023 – February 2024",
-    type: "Real-time Systems",
-    description: "Voice, video, and text chat—all in Node.js and Socket.IO. I worked on keeping latency low and the streams stable. We also had live radio; I integrated third-party APIs and made the streaming pipeline reliable. I added role-based access so only the right people could do certain actions.",
+    type: "Full-stack & Real-time",
+    description: "Built Clickasa, an on-demand home service platform with provider matching, geo-location, booking, and real-time job tracking. Built an astrology platform similar to Astrotalk with live consultations, video chat, and e-commerce astro store.",
     icon: Briefcase,
   },
   {
     title: "Software Engineer",
-    company: "Luncet Innovation Pvt Ltd",
+    company: "Lucent Innovation",
     period: "June 2022 – June 2023",
-    type: "Backend",
-    description: "Backend for a product that used blockchain and smart contracts. I built the APIs that talked to the chain and made sure we could handle a lot of concurrent requests. Also did checkout and conversion flow improvements on the backend.",
+    type: "Full-stack & Blockchain",
+    description: "Built React.js frontend and Node.js backend for NFT marketplace with minting, listing, bidding, and trading. UI integrated with backend APIs and blockchain smart contracts.",
     icon: Briefcase,
   },
 ];
@@ -46,7 +46,7 @@ export function AboutSection() {
             About Me
           </h2>
           <p className="text-xl text-foreground-muted max-w-3xl mx-auto">
-            Backend engineer, ~4 years in. I build systems that stay up when it matters.
+            Software Engineer with 3.8 years building systems that scale—social platforms, ecommerce, security, and events.
           </p>
         </div>
 
@@ -56,10 +56,10 @@ export function AboutSection() {
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-foreground">My Journey</h3>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                I've been writing backend code for about 4 years, mostly in Node.js. Started at a smaller product company, then moved to places where the systems had to scale—real-time calling, live dashboards, shipping and fulfillment logic. I care about clean design and making sure the database and APIs don't become the bottleneck.
+                I've been building production systems for 3.8 years in Node.js, NestJS, and React—across social platforms, ecommerce, security, and events. I've scaled infrastructure to 1 lakh+ users, cut call failures by 50%, and improved DB performance by 75%. I own products end-to-end: architecture, APIs, and delivery.
               </p>
               <p className="text-lg text-foreground-muted leading-relaxed">
-                These days I do a mix of hands-on coding and helping decide what we build next. I've worked on security management backends, eCommerce workflows, and creator–fan platforms. When something breaks in prod, I'm usually the one digging in and fixing it.
+                I've worked with clients in USA, UK, Nigeria, and Canada. My work spans real-time systems (Socket.IO), guard management, event platforms, creator–fan apps, and NFT marketplaces. When something breaks in prod, I'm the one digging in and fixing it.
               </p>
             </div>
 
@@ -71,7 +71,7 @@ export function AboutSection() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-foreground">Education</h4>
-                  <p className="text-primary font-medium">MSc in Information Technology, GPA: 9.36 / 10</p>
+                  <p className="text-primary font-medium">MSCIT — Grades: 9.36/10</p>
                   <div className="flex items-center gap-4 mt-2 text-sm text-foreground-muted">
                     <div className="flex items-center gap-1">
                       <MapPin className="h-4 w-4" />
@@ -79,13 +79,13 @@ export function AboutSection() {
                     </div>
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      January 2020 – January 2024
+                      Passing Year: 2024
                     </div>
                   </div>
-                  <p className="text-primary font-medium mt-2">HSC, 74% — H.H. Patel High School</p>
+                  <p className="text-primary font-medium mt-2">Higher Education, 74% — H.H. Patel High School</p>
                   <div className="flex items-center gap-1 mt-1 text-sm text-foreground-muted">
                     <Calendar className="h-4 w-4" />
-                    January 2019 – January 2020
+                    Passing Year: 2020
                   </div>
                 </div>
               </div>

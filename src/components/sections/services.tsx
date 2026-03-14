@@ -147,7 +147,7 @@ export function ServicesSection() {
                 Have a project in mind?
               </h3>
               <p className="text-foreground-muted">
-                Tell me what you're building and we can figure out if I'm a good fit.
+                Tell me what you're building and we can figure out if I'm a good fit. I've worked with clients in USA, UK, Nigeria, and Canada.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button

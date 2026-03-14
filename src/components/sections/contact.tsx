@@ -31,6 +31,13 @@ const contactInfo = [
     color: "accent"
   },
   {
+    icon: MapPin,
+    label: "Location",
+    value: "Sabarmati, Ahmedabad, Gujarat, India",
+    href: "https://maps.google.com/?q=Sabarmati+Ahmedabad+Gujarat+India",
+    color: "teal"
+  },
+  {
     icon: Linkedin,
     label: "LinkedIn",
     value: "Connect with me",
